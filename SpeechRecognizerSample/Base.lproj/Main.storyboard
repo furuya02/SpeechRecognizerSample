@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SpeechRecognizerSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Es-C2-qcJ">
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="3PC-ro-dMi"/>
+                                    <constraint firstAttribute="height" constant="100" id="Bid-Qx-g5D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <state key="normal" title="開始">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A40-jJ-O5W"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="pjy-xk-tUt">
+                                <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kUk-Sb-xkG">
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="vMT-P6-fIB"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ema-qC-Xjr">
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5Es-C2-qcJ" firstAttribute="centerX" secondItem="pjy-xk-tUt" secondAttribute="centerX" id="82l-Lt-hv2"/>
+                            <constraint firstItem="ema-qC-Xjr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="HWw-kR-0md"/>
+                            <constraint firstItem="5Es-C2-qcJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WLo-KZ-wlR"/>
+                            <constraint firstItem="kUk-Sb-xkG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="XAd-yf-gdt"/>
+                            <constraint firstAttribute="trailing" secondItem="kUk-Sb-xkG" secondAttribute="trailing" constant="15" id="Xjc-D5-0rc"/>
+                            <constraint firstAttribute="trailing" secondItem="ema-qC-Xjr" secondAttribute="trailing" constant="15" id="Zao-Xs-YxO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5Es-C2-qcJ" secondAttribute="bottom" constant="30" id="Ztv-4M-42H"/>
+                            <constraint firstItem="kUk-Sb-xkG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="bHA-zT-qiD"/>
+                            <constraint firstItem="ema-qC-Xjr" firstAttribute="top" secondItem="kUk-Sb-xkG" secondAttribute="bottom" constant="15" id="foE-qD-QC6"/>
+                            <constraint firstItem="5Es-C2-qcJ" firstAttribute="top" secondItem="ema-qC-Xjr" secondAttribute="bottom" constant="20" id="jX5-Iu-aat"/>
+                            <constraint firstItem="5Es-C2-qcJ" firstAttribute="centerY" secondItem="pjy-xk-tUt" secondAttribute="centerY" id="jjJ-Mm-eri"/>
+                            <constraint firstItem="5Es-C2-qcJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s6E-DP-zkW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="5Es-C2-qcJ" id="iP2-1s-gCX"/>
+                        <outlet property="indicator" destination="pjy-xk-tUt" id="ceg-Pb-Lkw"/>
+                        <outlet property="inputTextView" destination="kUk-Sb-xkG" id="FCB-00-HqV"/>
+                        <outlet property="outputTextView" destination="ema-qC-Xjr" id="MxG-1q-CuG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,395 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		104DB8479705DF2B1EEA6293 /* Pods_SpeechRecognizerSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87891EADFFDA363B52041E3C /* Pods_SpeechRecognizerSample.framework */; };
+		D76A87121D84EC9700BDB2FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76A87111D84EC9700BDB2FB /* AppDelegate.swift */; };
+		D76A87141D84EC9700BDB2FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76A87131D84EC9700BDB2FB /* ViewController.swift */; };
+		D76A87171D84EC9700BDB2FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D76A87151D84EC9700BDB2FB /* Main.storyboard */; };
+		D76A87191D84EC9700BDB2FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D76A87181D84EC9700BDB2FB /* Assets.xcassets */; };
+		D76A871C1D84EC9700BDB2FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D76A871A1D84EC9700BDB2FB /* LaunchScreen.storyboard */; };
+		D76A87241D85E1C000BDB2FB /* Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76A87231D85E1C000BDB2FB /* Translator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		87891EADFFDA363B52041E3C /* Pods_SpeechRecognizerSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeechRecognizerSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97F67655CE8C0AEADD4E435C /* Pods-SpeechRecognizerSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechRecognizerSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpeechRecognizerSample/Pods-SpeechRecognizerSample.debug.xcconfig"; sourceTree = "<group>"; };
+		B2952CAD8FD250B7BBA2DA60 /* Pods-SpeechRecognizerSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechRecognizerSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpeechRecognizerSample/Pods-SpeechRecognizerSample.release.xcconfig"; sourceTree = "<group>"; };
+		D76A870E1D84EC9700BDB2FB /* SpeechRecognizerSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeechRecognizerSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D76A87111D84EC9700BDB2FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D76A87131D84EC9700BDB2FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D76A87161D84EC9700BDB2FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D76A87181D84EC9700BDB2FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D76A871B1D84EC9700BDB2FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D76A871D1D84EC9700BDB2FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D76A87231D85E1C000BDB2FB /* Translator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Translator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D76A870B1D84EC9700BDB2FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				104DB8479705DF2B1EEA6293 /* Pods_SpeechRecognizerSample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1ED84CEFAAB3FBE3FB411D4D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				97F67655CE8C0AEADD4E435C /* Pods-SpeechRecognizerSample.debug.xcconfig */,
+				B2952CAD8FD250B7BBA2DA60 /* Pods-SpeechRecognizerSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3B7BC03606ACF771CD36DE23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87891EADFFDA363B52041E3C /* Pods_SpeechRecognizerSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D76A87051D84EC9700BDB2FB = {
+			isa = PBXGroup;
+			children = (
+				D76A87101D84EC9700BDB2FB /* SpeechRecognizerSample */,
+				D76A870F1D84EC9700BDB2FB /* Products */,
+				1ED84CEFAAB3FBE3FB411D4D /* Pods */,
+				3B7BC03606ACF771CD36DE23 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D76A870F1D84EC9700BDB2FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D76A870E1D84EC9700BDB2FB /* SpeechRecognizerSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D76A87101D84EC9700BDB2FB /* SpeechRecognizerSample */ = {
+			isa = PBXGroup;
+			children = (
+				D76A87111D84EC9700BDB2FB /* AppDelegate.swift */,
+				D76A87131D84EC9700BDB2FB /* ViewController.swift */,
+				D76A87151D84EC9700BDB2FB /* Main.storyboard */,
+				D76A87181D84EC9700BDB2FB /* Assets.xcassets */,
+				D76A871A1D84EC9700BDB2FB /* LaunchScreen.storyboard */,
+				D76A871D1D84EC9700BDB2FB /* Info.plist */,
+				D76A87231D85E1C000BDB2FB /* Translator.swift */,
+			);
+			path = SpeechRecognizerSample;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D76A870D1D84EC9700BDB2FB /* SpeechRecognizerSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D76A87201D84EC9700BDB2FB /* Build configuration list for PBXNativeTarget "SpeechRecognizerSample" */;
+			buildPhases = (
+				9E0C295C86547C9966B9D582 /* Check Pods Manifest.lock */,
+				D76A870A1D84EC9700BDB2FB /* Sources */,
+				D76A870B1D84EC9700BDB2FB /* Frameworks */,
+				D76A870C1D84EC9700BDB2FB /* Resources */,
+				0015EB0C6D78F86C8D24678B /* Embed Pods Frameworks */,
+				B3DEA6DC2888D7FBF099F84D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpeechRecognizerSample;
+			productName = SpeechRecognizerSample;
+			productReference = D76A870E1D84EC9700BDB2FB /* SpeechRecognizerSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D76A87061D84EC9700BDB2FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = SAPPOROWORKS;
+				TargetAttributes = {
+					D76A870D1D84EC9700BDB2FB = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = T32GQ84AVX;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D76A87091D84EC9700BDB2FB /* Build configuration list for PBXProject "SpeechRecognizerSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D76A87051D84EC9700BDB2FB;
+			productRefGroup = D76A870F1D84EC9700BDB2FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D76A870D1D84EC9700BDB2FB /* SpeechRecognizerSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D76A870C1D84EC9700BDB2FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D76A871C1D84EC9700BDB2FB /* LaunchScreen.storyboard in Resources */,
+				D76A87191D84EC9700BDB2FB /* Assets.xcassets in Resources */,
+				D76A87171D84EC9700BDB2FB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0015EB0C6D78F86C8D24678B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpeechRecognizerSample/Pods-SpeechRecognizerSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E0C295C86547C9966B9D582 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B3DEA6DC2888D7FBF099F84D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpeechRecognizerSample/Pods-SpeechRecognizerSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D76A870A1D84EC9700BDB2FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D76A87141D84EC9700BDB2FB /* ViewController.swift in Sources */,
+				D76A87241D85E1C000BDB2FB /* Translator.swift in Sources */,
+				D76A87121D84EC9700BDB2FB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D76A87151D84EC9700BDB2FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D76A87161D84EC9700BDB2FB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D76A871A1D84EC9700BDB2FB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D76A871B1D84EC9700BDB2FB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D76A871E1D84EC9700BDB2FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D76A871F1D84EC9700BDB2FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D76A87211D84EC9700BDB2FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97F67655CE8C0AEADD4E435C /* Pods-SpeechRecognizerSample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = T32GQ84AVX;
+				INFOPLIST_FILE = SpeechRecognizerSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ne.sapporoworks.SpeechRecognizerSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D76A87221D84EC9700BDB2FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2952CAD8FD250B7BBA2DA60 /* Pods-SpeechRecognizerSample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = T32GQ84AVX;
+				INFOPLIST_FILE = SpeechRecognizerSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ne.sapporoworks.SpeechRecognizerSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D76A87091D84EC9700BDB2FB /* Build configuration list for PBXProject "SpeechRecognizerSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D76A871E1D84EC9700BDB2FB /* Debug */,
+				D76A871F1D84EC9700BDB2FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D76A87201D84EC9700BDB2FB /* Build configuration list for PBXNativeTarget "SpeechRecognizerSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D76A87211D84EC9700BDB2FB /* Debug */,
+				D76A87221D84EC9700BDB2FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D76A87061D84EC9700BDB2FB /* Project object */;
+}
