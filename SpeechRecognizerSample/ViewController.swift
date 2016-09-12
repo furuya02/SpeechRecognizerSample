@@ -71,6 +71,7 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
     }
 
     // MARK: - Private
+
     fileprivate func startRecording() throws {
 
         if let recognitionTask = recognitionTask {
@@ -109,6 +110,7 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
         inputNode.installTap(onBus: 0, bufferSize: 1024, format: recordingFormat) { (buffer: AVAudioPCMBuffer, when: AVAudioTime) in
             self.recognitionRequest?.append(buffer)
         }
+
         audioEngine.prepare()
         try audioEngine.start()
     }
@@ -124,9 +126,6 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
             let utterance = AVSpeechUtterance(string: result)
             utterance.voice = AVSpeechSynthesisVoice(language: "en")
             self.talker.speak(utterance)
-
-
-
             self.setMode(.none)
         })
     }
@@ -148,7 +147,6 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
             indicator.isHidden = false
             indicator.startAnimating()
         }
-
     }
 
     // MARK: - SFSpeechRecognizerDelegate

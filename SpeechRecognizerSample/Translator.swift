@@ -9,7 +9,6 @@
 import Foundation
 import Alamofire
 
-
 class Translator {
 
     fileprivate var accessToken = ""
@@ -19,7 +18,6 @@ class Translator {
         // アクセストークン取得
         let clientId = "TranslationTwitterSample"
         let clientSecret = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-
 
         let parameters:Parameters = [
             "client_id" : clientId,
@@ -39,6 +37,7 @@ class Translator {
             }
         }
     }
+
     func conversion(_ message:String, complate: @escaping (String) -> Void) {
         let query = message as NSString
         let encodeString = query.addingPercentEscapes(using: String.Encoding.utf8.rawValue)!
