@@ -1,0 +1,2 @@
+# SpeechRecognizerSample
+SpeechRecognizerを利用した翻訳アプリ
